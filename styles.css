@@ -100,11 +100,15 @@ a:hover {
   margin: 100px auto 100px auto;
   text-align: center;
   margin-top: 150px;
+  list-style: none;
 }
 
 .intro {
   width: 30%;
   margin: auto;
+}
+.skills li {
+  list-style-type: none;
 }
 
 .contact {
@@ -162,6 +166,7 @@ a:hover {
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
 }
+
 
 @media only screen and (max-width: 900px) {
   .menu {
