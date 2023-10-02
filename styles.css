@@ -45,37 +45,6 @@ a {
 a:hover {
   color: #EAF6F6;
 }
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.burger-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 20px;
-  cursor: pointer;
-}
-
-.burger {
-  height: 3px;
-  background-color: brown;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu li {
-  list-style: none;
-  margin: 0 20px;
-}
-
 .navbar {
     overflow: hidden;
 	  background-color: #215612;
@@ -90,14 +59,24 @@ a:hover {
 	  color: white;
 	  text-align: center;
 	  padding: 15px 16px;
-	  
+  }
+:root {
+  --primary-color:maroon;
+  --secondary-color: orange;
+}
+  .moon-cloud {
+    width: 100px;
+    padding:50px;
+    float: right;
+    cursor: pointer;
+    
   }
    .sub-menu {
     float: left;
 	  overflow: hidden;
 	}
    .sub-menu .btn {
-      font-size: 16px;  
+    font-size: 16px;  
 	  outline: none;
 	  color: white;
 	  padding: 14px 16px;
@@ -118,7 +97,6 @@ a:hover {
 	  z-index: 1;
 	  
 	}
-
 	.content a {
 	  float: none;
 	  color: black;
@@ -128,12 +106,41 @@ a:hover {
 	  text-align: left;
 	}
 	.content a:hover {
-	  background-color: #eee;
+	  background-color: var(--primary-color);
 	  color: black;
 	}
 	.sub-menu:hover .content {
 	  display: block;
 	}
+ /* Media Query Section */
+
+body {
+    font-size: 16px; 
+    background-color: #f0f0f0;
+  }
+
+@media (max-width: 768px) {
+    body {
+    font-size: 14px; 
+    background-color: #fff; 
+  }
+.container {
+        width: 100%; /
+        padding: 10px; 
+    }
+    
+}
+@media (min-width: 769px) {
+    body {
+        font-size: 18px; 
+    }
+  
+.container {
+        width: 80%; 
+        margin: 0 auto;
+    }
+    
+}
 
 
 
